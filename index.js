@@ -9,12 +9,17 @@ let p = document.querySelectorAll('.p')
 
 btn1.addEventListener('click', () => {
     body.style.backgroundColor = '#f2f2f2'
+    // Не обязательно была так паритсья)
     h1.style.color = '#000000'
     p[0].style.color = '#000000'
     p[1].style.color = '#000000'
     p[2].style.color = '#000000'
     p[3].style.color = '#000000'
-
+    
+    // всё, что касается шрифтов наследуется в css
+    // ты мог просто задать цвет фона и шрифта body:
+    // body.style.backgroundColor = '#f2f2f2'
+    // body.style.color = '#000'
 })
 
 btn2.addEventListener('click', () => {
